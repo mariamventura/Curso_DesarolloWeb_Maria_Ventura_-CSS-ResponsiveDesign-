@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script:400,700');
+body {
+  background-color: #02010a;
+}
+
+@keyframes container-animacion {
+	0% {
+		position: relative;
+		left: 0px
+	}
+	50% {
+		position: relative;
+		left: 500px;
+	}
+	100% {
+		position: relative;
+		left: 0px;
+	}
+}
+
+
+
+
+#container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  max-width: 900px;
+  min-width: 320px;
+  font-family: 'Dancing Script', cursive;
+}
+
+/*    HEADER CONTENT BELOW   */
+
+.flex-header_content {
+  background-color: #5b7989;
+  border-radius: 10px 10px 0px 0px;
+  display: -webkit-flex;
+  display: flex;
+  padding: 5px;
+}
+
+.flex-header_content div {
+  width: 100%;
+  margin: 20px 0 20px 0;
+}
+
+header h1 {
+  margin: 10px;
+  color: white;
+  text-shadow: 2px 2px #02010a;
+}
+
+header ul {
+  text-align: right;
+  margin: 10px;
+}
+
+header ul a {
+  color: white;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+/*    HOME CONTENT BELOW   */
+
+#home_thumbs {
+  background-color: #82c3a6;
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  padding-top: 20px;
+}
+
+/*MAIN IMAGE*/
+
+#main_thumb1 {
+  padding: 20px;
+  width: calc(100% - 40px);
+  text-align: center;
+}
+
+#main_thumb1 img {
+  width: calc(100% - 40px);
+  max-width: 600px;
+  -moz-box-shadow: 2px 2px #02010a;
+  -webkit-box-shadow: 2px 2px #02010a;
+  box-shadow: 2px 2px #02010a;
+}
+
+/*SMALL thumbs/IMAGES*/
+
+.main_flex_thumbs_container {
+  display: -webkit-flex;
+  display: flex;
+  background-color: #d5c75f;
+}
+
+.main_flex_thumbs_container div {
+  width: 100%;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.main_flex_thumbs_container div img {
+  width: 100%;
+  max-width: 80%;
+  border: 1px solid #02010a;
+  -moz-box-shadow: 2px 2px #02010a;
+  -webkit-box-shadow: 2px 2px #02010a;
+  box-shadow: 2px 2px #02010a;
+}
+
+#home_thumb1:hover {
+  -ms-transform: rotate(10deg);
+  /* IE 9 */
+  -webkit-transform: rotate(10deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(10deg);
+  box-shadow: 2px 2px #82c3a6;
+  border: 1px solid #82c3a6;
+  transition-duration: 0.5s;
+}
+
+#home_thumb2:hover {
+  -webkit-transform: translateX(20px);
+  transform: translateX(5px);
+  box-shadow: 2px 2px #82c3a6;
+  border: 1px solid #82c3a6;
+  transition-duration: 0.5s;
+}
+
+/*    PAISAJES Y RETRATOS CONTENT BELOW   */
+
+section {
+  display: inline-block;
+  margin: auto;
+  width: 100%;
+  padding-top: 40px;
+  background-color: #d5c75f;
+}
+
+.thumbs_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+section .thumbs_container>div {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 33.3%;
+}
+
+section .thumbs_container>div img {
+  width: 100%;
+  max-width: 80%;
+  border: 1px solid #02010a;
+  -moz-box-shadow: 2px 2px #02010a;
+  -webkit-box-shadow: 2px 2px #02010a;
+  box-shadow: 2px 2px #02010a;
+}
+
+/* ///////////////////// IMAGES EFFETS BELOW ///////////////////////// */
+
+#thumb1 img {
+  -webkit-filter: blur(10px);
+  filter: blur(10px);
+}
+
+#thumb3 img {
+  -webkit-filter: sepia(90%);
+  filter: sepia(90%);
+}
+
+.thumbs_grayscale img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+/*    FOOTER CONTENT BELOW   */
+
+footer {
+  background-color: #C6d5c5;
+  border-radius: 0px 0px 10px 10px;
+  bottom: 0;
+}
+
+.footer-container {
+  display: -webkit-flex;
+  display: flex;
+}
+
+.footer-item {
+  width: 50%;
+  margin: 20px;
+}
+
+.footer-item h1 {
+  margin: 0px;
+  text-align: center;
+}
+
+.footer-item img {
+  padding-top: 1px;
+  width: 20px;
+}
+
+/*/////////////   MEDIA QUERY   /////////////*/
+
+@media (min-width:0px) and (max-width:600px) {
+  /*    HEADER CONTENT BELOW   */
+  .flex-header_content {
+    flex-direction: column;
+    text-align: center;
+  }
+  header ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  /*    HOME CONTENT BELOW   */
+  .main_flex_thumbs_container {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+  /*    PAISAJES Y RETRATOS CONTENT BELOW   */
+  section .thumbs_container>div {
+    width: 100%;
+  }
+  /*    FOOTER CONTENT BELOW   */
+  .footer-container {
+    flex-direction: column;
+  }
+  .footer-item h1 {
+    text-align: left;
+  }
