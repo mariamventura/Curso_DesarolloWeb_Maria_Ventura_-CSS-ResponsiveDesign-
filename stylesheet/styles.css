@@ -97,13 +97,12 @@ header ul a {
   display: -webkit-flex;
   display: flex;
   background-color: #d5c75f;
+  padding-top: 40px;
 }
 
 .main_flex_thumbs_container div {
   width: 100%;
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
 }
 
 .main_flex_thumbs_container div img {
@@ -227,7 +226,6 @@ footer {
   .main_flex_thumbs_container {
     flex-direction: column;
     margin: 0;
-    padding: 0;
   }
   /*    PAISAJES Y RETRATOS CONTENT BELOW   */
   section .thumbs_container>div {
