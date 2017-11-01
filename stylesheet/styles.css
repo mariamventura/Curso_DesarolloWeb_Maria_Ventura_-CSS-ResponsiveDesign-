@@ -3,24 +3,6 @@ body {
   background-color: #02010a;
 }
 
-@keyframes container-animacion {
-	0% {
-		position: relative;
-		left: 0px
-	}
-	50% {
-		position: relative;
-		left: 500px;
-	}
-	100% {
-		position: relative;
-		left: 0px;
-	}
-}
-
-
-
-
 #container {
   position: absolute;
   top: 0;
