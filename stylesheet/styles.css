@@ -3,7 +3,8 @@ body {
   background-color: #02010a;
 }
 
-#container {
+
+.container {
   position: absolute;
   top: 0;
   right: 0;
@@ -13,6 +14,24 @@ body {
   max-width: 900px;
   min-width: 320px;
   font-family: 'Dancing Script', cursive;
+  animation: container 1s;
+}
+
+/*    CONTAINER ANIMATION BELOW   */
+
+@-webkit-keyframes container {
+	0% {
+		position: relative;
+		margin-top: 150%;
+	}
+	50% {
+		position: relative;
+		margin-top: -5%;
+	}
+	100% {
+		position: relative;
+		margin-top: 0%;
+	}
 }
 
 /*    HEADER CONTENT BELOW   */
