@@ -3,7 +3,6 @@ body {
   background-color: #02010a;
 }
 
-
 .container {
   position: absolute;
   top: 0;
@@ -17,7 +16,6 @@ body {
   animation: container 1s;
 }
 
-/*    CONTAINER ANIMATION BELOW   */
 
 @-webkit-keyframes container {
 	0% {
@@ -33,6 +31,7 @@ body {
 		margin-top: 0%;
 	}
 }
+
 
 /*    HEADER CONTENT BELOW   */
 
